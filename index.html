@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cookie Gym</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.jpg">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans|Pacifico&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d48d3b59c4.js"></script>
+  </head>
+
+  <body>
+
+     <header>
+       <div class="container">
+         <i id="open_menu" class="fas fa-bars"></i>
+         <!-- <nav id="menu" class="shown"> -->
+         <nav id="menu">
+           <i id="close_menu" class="fas fa-times"></i>
+           <ul>
+             <li><a href="#">Menu</a></li>
+             <li><a href="#">Price</a></li>
+             <li><a href="#">Access</a></li>
+           </ul>
+         </nav>
+         <h1>Cookie Gym</h1>
+       </div>
+     </header>
+
+     <section class="features">
+       <div class="container">
+          <h1 class="section-title">Features</h1>
+
+             <section class="feature">
+               <img src="img/feature1.jpg" alt="cookiegymtraining">
+               <p>We have special training method not like other gyms. You could find best program that suits you.And we have colorful and pop training tools.I'm sure they will motivate you! </p>
+             </section>
+
+             <section class="feature">
+               <img src="img/feature2.jpg" alt="cookiegymdrink">
+               <p>You don't have to bring anything to train at Cookie Gym because we have everything you need.Like a bottle of water, wear, towel.You will also enjoy original delicious protein drink here. </p>
+             </section>
+
+             <section class="feature">
+               <img src="img/feature3.jpg" alt="cookiegymcafe">
+               <p>You will be surprised about our facilities. Because we have not only training gym but also healthy cafe! After your lesson, you will get delicious and healthy foods and drinks. </p>
+             </section>
+
+       </div>
+
+     </section>
+
+     <section class="news">
+       <div class="container">
+         <h1 class="section-title">News</h1>
+         <div class="flex">
+           <article class="news-item">
+             <img src="img/news1.jpg" alt="news1">
+             <p>Our new foods and drinks has been released! We have many kinds of cookies like chocolate and caramel.</p>
+           </article>
+           <article class="news-item">
+             <img src="img/news2.jpg" alt="news2">
+             <p>If you want to exercise outside, Cookie Gym is the best! We get new grounds for some sports.</p>
+           </article>
+           <article class="news-item">
+             <img src="img/news3.jpg" alt="news2">
+             <p>Now you would use your smartphone or laptop at both our gym and cafe with high speed wi-fi.</p>
+           </article>
+         </div>
+       </div>
+     </section>
+
+     <section class="movie">
+       <div class="container">
+         <h1 class="section-title">Movie</h1>
+         <div class="iframe-wrapper">
+           <iframe width="713" height="401" src="https://www.youtube.com/embed/JbSl281e65s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         </div>
+       </div>
+    </section>
+
+
+     <footer>
+       <div class="container">
+         <p>&copy; cookiegym.me</p>
+       </div>
+     </footer>
+
+     <script type="text/javascript">
+       (function() {
+        'use strict';
+
+         var openMenu = document.getElementById('open_menu');
+         var closeMenu = document.getElementById('close_menu');
+         var menu = document.getElementById('menu');
+
+         openMenu.addEventListener('click', function(){
+           menu.classList.add('shown');
+         });
+
+         closeMenu.addEventListener('click', function(){
+           menu.classList.remove('shown');
+         });
+       })();
+     </script>
+  </body>
+
+</html>
